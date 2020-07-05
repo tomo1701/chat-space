@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  height:100vh;
+  width:100vw;
+}
+
+.side_bar {
+  width: 300px;
+  height:100vh;
+
+}
+
+.side_header {
+  background-color:#253141;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.groups {
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 20px 20px 0;
+  overflow: scroll;
+  &__name {
+  color:#ffffff;
+  font-size: 15px;
+  margin-bottom: 5px;
+  }
+
+  &__message {
+  color:#ffffff;
+  font-size: 11px;
+  }
+
+}
+
+.chat_main{
+  height:100vh;
+  width:calc(100vw - 300px);
+}
+
+.main-header {
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+    height: 100px;
+    padding: 0 40px;
+  
+
+  .main-header1 {
+    .chat-name1 {
+      color: #333333;
+      font-size: 20px;
+      margin-top: 35px;
+
+    }
+    .chat-name2 {
+      color: #999999;
+      font-size: 12px;
+      margin-top: 15px;
+      
+
+    }
+  }
+  .main-header2 {
+    color:#38aef0;
+    font-size: 16px;
+    border: 1px solid #38AEF0;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 28px;
+    padding: 0 20px;
+  }
+
+
+
+}
+
+.messages {
+  background-color: #fafafa;
+  box-sizing: border-box;
+  height: calc(100vh - 100px - 90px);
+  overflow: scroll;
+  padding: 46px 40px 0;
+}
+.js-massages {
+  color: #333333;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.upper-message{
+  color: #999999;
+  font-size: 12px;
+}
+.lower-message{
+  color: #434A54;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 46px;
+}
+
+.main-message{
+  display: flex;
+
+}
+  
+
+.form {
+  background-color: #d2d2d2;
+  height: 90px;
+  padding: 20px 40px;
+  display: flex;
+    .input-box {
+      display: flex;
+      width: 100%;
+      position: relative;
+      &__text {
+        height: 50px;
+        width: 100%;
+        color: #434a54;
+        border-style: none;
+        padding: 0 40px 0 10px;
+      }
+      &__image {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 1.3rem;
+
+        &__file {
+          display: none;
+        }
+      }
+    }
+  }
+  .submit-btn {
+    width: 100px;
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 15px;
+    background-color: #38aef0;
+    color: white;
+    cursor: pointer;
+  }
+
+.side-box {
+  height: 20px;
+  width: 260px;
+  background-color: #ffffff;
+  margin: 0 20px;
+  display: flex;
+  width: 100%;
+  position: relative;
+
+}
+
+.side-box-menu {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
