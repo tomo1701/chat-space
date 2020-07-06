@@ -5,15 +5,19 @@
         = current_user.name
         %ul.side-box-menu
           %li.side-box-menu-newgroup
-            =icon('fa','edit')
+            = link_to new_group_path do
+              =icon('fa','edit')
           %li.side-box-menu-edituser
             = link_to edit_user_path(current_user) do
               = icon('fas' , 'cog')
   .groups 
-    .groups__name
-      techcamp
-    .groups__message
-      まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .groups__name
+            = group.name
+          .groups__message
+            まだメッセージがありません
     
 
 
