@@ -22,11 +22,11 @@
   .form
     .input-box
       = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
         .form__mask
-          = f.text_field :content, class: 'form__mask__text', placeholder: 'type a message'
-          = f.label :image, class: 'form__mask__image' do
-            = icon('fa', 'image', class: 'icon')
-            = f.file_field :image, class: 'form__mask__image__file'
+          = f.label :image, class: 'input-box__image' do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :image, class: 'nput-box__image__file'
         = f.submit 'Send', class: 'submit-btn'
 
 

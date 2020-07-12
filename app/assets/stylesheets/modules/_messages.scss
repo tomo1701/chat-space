@@ -118,22 +118,11 @@
   background-color: #d2d2d2;
   height: 90px;
   padding: 20px 40px;
-  
-
+  display: flex;
     .input-box {
       display: flex;
       width: 100%;
-      
-      
-      
-      .new_message{
-        display:flex;
-        width: 100%;
-        
-        .form__mask{
-          position: relative;
-          width: 100%;
-     
+      position: relative;
       &__text {
         height: 50px;
         width: 100%;
@@ -141,7 +130,6 @@
         border-style: none;
         padding: 0 40px 0 10px;
       }
-
       &__image {
         position: absolute;
         top: 10px;
@@ -154,8 +142,6 @@
         }
       }
     }
-  }
-}
   }
   .submit-btn {
     width: 100px;
