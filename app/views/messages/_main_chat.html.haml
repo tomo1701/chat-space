@@ -12,13 +12,13 @@
         edit
   .messages
     = render @messages
-    .main-message
-      .js-massages
-        masa
-      .upper-message
-        2020/7/4土
-    .lower-message
-      おはよう！
+    -# .main-message
+    -#   .js-massages
+    -#     masa
+    -#   .upper-message
+    -#     2020/7/4土
+    -# .lower-message
+    -#   おはよう！
   .form
     .input-box
       = form_for [@group, @message] do |f|
